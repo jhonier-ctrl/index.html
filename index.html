@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Mi perfil</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
       --fondo: #eaf2f8;
@@ -76,7 +76,8 @@
       opacity: 0.9;
     }
 
-    input, textarea {
+    input,
+    textarea {
       width: 90%;
       padding: 10px;
       border: 1px solid #ccc;
@@ -97,13 +98,15 @@
   </style>
 </head>
 <body>
-
   <!-- BOTÓN DE MODO OSCURO -->
   <button onclick="alternarModo()">🌙 Cambiar modo</button>
 
   <!-- TARJETA PRINCIPAL -->
   <div class="tarjeta">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxtQoj3m9feExfJte_KFJetYPzTe5SbxXWRA&usqp=CAU" alt="Avatar">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxtQoj3m9feExfJte_KFJetYPzTe5SbxXWRA&usqp=CAU"
+      alt="Avatar"
+    />
     <h1>Jhonier Caamaño</h1>
     <p>Aprendiendo a crear páginas web con HTML y CSS 🚀</p>
     <a href="https://www.google.com" target="_blank">Ver más</a>
@@ -114,9 +117,9 @@
   <div class="tarjeta">
     <h1>Sobre mí</h1>
     <p>
-      Me llamo Jhonier.<br>
-      Estoy aprendiendo HTML, CSS y JavaScript desde el celular.<br>
-      Me interesa el hacking ético y los servidores de Minecraft.<br>
+      Me llamo Jhonier.<br />
+      Estoy aprendiendo HTML, CSS y JavaScript desde el celular.<br />
+      Me interesa el hacking ético y los servidores de Minecraft.<br />
       ¡Quiero crear mis propios proyectos web y bots! 💻🧠
     </p>
   </div>
@@ -124,13 +127,32 @@
   <!-- FORMULARIO DE CONTACTO FUNCIONAL -->
   <div class="tarjeta">
     <h1>Contáctame</h1>
-    <form action="https://formsubmit.co/jhonierrjhoy@gmail.com" method="POST">
-      <input type="text" name="nombre" placeholder="Tu nombre" required><br><br>
-      <input type="email" name="email" placeholder="Tu correo" required><br><br>
-      <textarea name="message" placeholder="Tu mensaje..." rows="4" required></textarea><br><br>
+    <form
+      action="https://formsubmit.co/jhonierrjhoy@gmail.com"
+      method="POST"
+    >
+      <input type="text" name="nombre" placeholder="Tu nombre" required /><br /><br />
+      <input
+        type="email"
+        name="email"
+        placeholder="Tu correo"
+        required
+      /><br /><br />
+      <textarea
+        name="message"
+        placeholder="Tu mensaje..."
+        rows="4"
+        required
+      ></textarea
+      ><br /><br />
 
-      <input type="hidden" name="_next" value="gracias.html">
-      <input type="hidden" name="_captcha" value="false">
+      <!-- Aquí la redirección absoluta para evitar problemas -->
+      <input
+        type="hidden"
+        name="_next"
+        value="https://jhonier-ctrl.github.io/gracias.html"
+      />
+      <input type="hidden" name="_captcha" value="false" />
 
       <button type="submit">Enviar</button>
     </form>
@@ -145,6 +167,5 @@
       document.body.classList.toggle("dark");
     }
   </script>
-
 </body>
 </html>
